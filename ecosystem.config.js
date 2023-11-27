@@ -1,9 +1,8 @@
 module.exports = {
-  apps : [{
+  apps: [{
     name: 'Redirector',
-    script: 'authbind --deep node server.js',
-    args: '',
-    exec_mode: 'fork',
-    instances: 1
+    script: 'server.js',
+    interpreter: 'authbind',
+    args: '--deep node'
   }]
 };
